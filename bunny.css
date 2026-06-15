@@ -1,0 +1,6 @@
+body {
+  margin: 1rem;
+  min-height: 100vh;
+  background-color: lightblue;
+  font-family: system-ui, sans-serif;
+}
