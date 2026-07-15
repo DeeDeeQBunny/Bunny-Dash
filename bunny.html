@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bunny Dash</title>
     <link rel="stylesheet" href="bunny.css" />
-    <script src="https://cloudfare.com"></script>
+    <!-- FIX: Replaced the typo with the correct library URL -->
+    <script src="https://cloudflare.com"></script>
   </head>
   <body>
     <div id="start-screen" class="screen active">
@@ -14,7 +15,6 @@
         <button id="start-button" type="button">Start</button>
       </div>
     </div>
-
     <div id="game-screen" class="screen">
       <div class="game-center">
         <h1>Welcome to Bunnycity!</h1>
@@ -42,11 +42,13 @@
           The credits are also in this page. To see the controls, press the C
           key or the controls button.
         </p>
-        <button id="back-button" type="button">Back</button>
-        <button id="continue-button" type="button">Continue</button>
+        <div class="button-row">
+          <button id="back-button" type="button">Back</button>
+          <button id="continue-button" type="button">Continue</button>
+        </div>
       </div>
+      <div id="canvas-container"></div>
     </div>
-
     <script src="bunny.js"></script>
   </body>
 </html>
